@@ -60,7 +60,9 @@ html {
 
 
 
-
+.button-wrapper {
+  margin: 0 auto;
+}
 .standard-button {
   background: #ff0041;
 
@@ -235,9 +237,17 @@ html {
   margin: 20px auto;
   text-align: center;
 }
+.stars {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 40px;
+}
 .arr-text {
-  padding: 0 0 16px 84px;
+  padding: 16px 0 16px 84px;
   position: relative;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 20px;
 }
  .arr-text::before {
   content: url(../images/star.svg);
@@ -246,14 +256,143 @@ html {
   top: 0;
 
 }
+ table {
+   margin: 2% 5%;
+   line-height: 40px;
+ }
+ table tr {
+   border-bottom: 1px solid #f0efef;
+ }
+ table td {
+   font-weight: bold;
+   padding: 0 10px;
+ }
+ table img {
+   display: block;
+   margin: 0 auto;
+ }
+ .table-head {
+
+ }
+ .table-head th:nth-child(1) {
+   background-color: #ffbc8a;
+ }
+.table-head th:nth-child(2) {
+   background-color: #ffa867;
+  text-align: center;
+  padding: 16px;
+
+ }
+.table-head th:nth-child(3) {
+   background-color: #ff953a;
+  text-align: center;
+  padding: 16px;
+ }
+.yellow-cell {
+  background-color: #fefea6;
+  border-bottom: 1px solid yellow;
+}
+.facts {
+  background-color: #00c4b7;
+  padding: 20px;
+}
+.facts h2 {
+  font-size: 36px;
+  line-height: 46px;
+  color: #fff;
+  max-width: 1110px;
+  display: block;
+  font-family: 'Montserrat', cursive;
+  font-weight: 900;
+  margin: 20px auto;
+  text-align: center;
+}
+.fact-container{
+  display: flex;
+  flex-direction: column;
+}
+.fact-box {
+  display: flex;
+  flex-direction: row;
+  margin: 10px 10px;
+  align-items: center;
+}
+.fact-desc {
+  padding: 24px;
+  color: #fff;
+  font-size: 20px;
+}
+.fact-desc h4 {
+  font-size: 24px;
+  font-weight: 800;
+}
+.facts .button-wrapper {
+  margin: 32px auto;
+}
+
 /*----------END second screen-----------------*/
 
 /*------------third screen--------------------*/
-.third-section {
+.third-section .container {
+  padding: 40px 0;
+  box-shadow: 0 0 5px 1px rgba(0,0,0,0.2);
+}
+.orange-stripe {
+  background-color: #ff7627;
+  margin: 0;
+  width: 100%;
+  padding: 20px;
+}
+.orange-stripe h5 {
+  text-align: center;
+  color: #fff;
+  font-size: 36px;
+  font-weight: 800;
+}
+.comments h3 {
+  font-size: 30px;
+  color: #000;
+  display: block;
+  font-family: 'Montserrat', cursive;
+  margin: 20px 0 0;
+  font-weight: 900;
+  text-align: center;
+  border-bottom: 1px solid #e6e5e5;
+  padding-bottom: 20px;
+}
+.comments-container{
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #e6e5e5;
+}
+.comments-box {
+  display: flex;
+  flex-direction: row;
+  margin: 10px 20px;
+  align-items: center;
+  border-bottom: 1px solid #e8e7e7;
+}
+.last-box {
+  border-bottom: none;
+}
+.comments-desc {
+  padding: 24px;
+  color: #000;
+  font-size: 20px;
+}
+.comments-desc h4 {
+  font-size: 22px;
+  font-weight: 800;
+}
+.avatar {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 300px;
+}
+.avatar img {
+  width:100%;
 
 }
-
-
 /*----------END third screen-----------------*/
 
 /*start ***/
@@ -284,29 +423,6 @@ html {
 }
 /*end ***/
 
-.third-section .standard-button {
-  margin: 40px auto;
-}
-
-.third-section h2::before,
-.third-section h2::after {
-  position: absolute;
-  left: 35%;
-  bottom: 0;
-  width: 30%;
-  content: '';
-  display: block;
-  height: 2px;
-  background: #fff;
-}
-.third-section h2::after {
-  bottom: -5%;
-  width: 20%;
-  left: 40%;
-}
-.third-section .books img {
-  width: 100%;
-}
 
 
 
@@ -504,7 +620,7 @@ html {
   .about-goods h2 {
     text-align: center;
   }
-  .about-goods .button-wrapper {
+.button-wrapper {
     padding: 0 0 35px; }
   /*.video {*/
     /*padding-bottom: 0; }*/
@@ -565,12 +681,7 @@ html {
 }
 
 @media(max-width: 767px){
-  .facts {
-    padding: 0 0 58px 40px;
-  }
-  .facts-box{
-     text-align: center;
-  }
+
   .comments .rate{
     position: initial;
     margin: 6px 0;
@@ -690,10 +801,7 @@ html {
     padding: 6px 9px 10px;
     margin-right: 11px;
   }
-  .facts-box {
-    text-align: left;
-    font-size: 19px;
-  }
+
   .good-arrows {
     padding: 24px 0 0 4px;
   }
