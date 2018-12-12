@@ -387,7 +387,7 @@ html {
 .avatar {
   border-radius: 50%;
   overflow: hidden;
-  width: 300px;
+  min-width: 150px;
 }
 .avatar img {
   width:100%;
@@ -429,16 +429,20 @@ html {
 
 
 /*----------------------bonus-------------------*/
+.bonus-section .container {
+  box-shadow: 0 0 5px 1px rgba(0,0,0,0.2);
+  margin-top: 32px;
+  padding: 0 0 40px;
+}
 .bonus-section  h3 {
   font-size: 30px;
   color: #000;
   display: block;
   font-family: 'Montserrat', cursive;
-  margin: 20px 0 0;
   font-weight: 900;
   text-align: center;
   border-bottom: 1px solid #e6e5e5;
-  padding-bottom: 20px;
+  padding: 20px;
 }
 .bonus-section .fact-container{
   display: flex;
@@ -449,7 +453,6 @@ html {
   flex-direction: row;
   margin: 10px 20px;
   align-items: center;
-  border-bottom: 1px solid #e8e7e7;
 }
 .last-box {
   border-bottom: none;
@@ -463,70 +466,32 @@ html {
   font-size: 22px;
   font-weight: 800;
 }
+.fact-img-wrap {
+  min-width: 140px;
+  display: flex;
+  justify-content: center;
+}
 
 /*---------------------- END bonus--------------*/
 
 /*---------------------- PS footer--------------*/
-
 .footer {
-  background: url("../images/footer-bg.jpg");
+  margin: 32px 0;
 }
 .footer .container {
-  background: rgba(248, 249, 250, 0.8);
-  padding: 65px 5px 40px;
+  box-shadow: 0 0 5px 1px rgba(0,0,0,0.2);
+  padding: 0;
 }
 .footer h3 {
-  position: relative;
-  text-align: center;
-  font-size: 36px;
-  line-height: 46px;
-  max-width: 1110px;
+  font-size: 30px;
+  color: #000;
   display: block;
   font-family: 'Montserrat', cursive;
   font-weight: 900;
-  text-shadow: 0px 1px 1px #080808;
-}
-.footer h3::after {
-  position: absolute;
-  top: 116px;
-  content: '';
-  display: block;
-  height: 2px;
-  background: #c2c6c7;
-  width: 40%;
-  left: 30%;
-}
-.footer span {
-  display: block;
   text-align: center;
-  margin: 60px;
-  font-size: 21px;
-  font-weight: 600;
+  border-bottom: 1px solid #e6e5e5;
+  padding: 20px;
 }
-.footer .standard-button {
-  margin: 120px auto 60px;
-  position: relative;
-  display: block;
-  text-align: center;
-  font-size: 26px;
-  line-height: 32px;
-  color: #fff;
-  text-transform: uppercase;
-}
-.footer .standard-button::after {
-  position: absolute;
-  content: url(../images/red-arrows.svg);
-  left: 50%;
-  margin-left: -80px;
-  top: -88px;
-  animation: downarrow 0.6s infinite alternate ease-in-out;
-}
-.footer b{
-  font-weight: 900;
-  font-family: 'Montserrat', sans-serif;
-  text-decoration: underline;
-}
-
 /*---------------------- END footer--------------*/
 
 @-webkit-keyframes rightarrow {
