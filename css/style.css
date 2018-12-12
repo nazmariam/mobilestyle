@@ -429,76 +429,39 @@ html {
 
 
 /*----------------------bonus-------------------*/
-
-.bonus-section {
-  padding: 0px 20px 20px;
-}
-.bonus-stripe {
-  background: yellow;
-  position: relative;
-  padding: 40px 0;
-}
-.bonus-stripe h3 {
-  text-align: center;
-  font-size: 36px;
-  line-height: 46px;
+.bonus-section  h3 {
+  font-size: 30px;
   color: #000;
-  max-width: 1110px;
   display: block;
   font-family: 'Montserrat', cursive;
+  margin: 20px 0 0;
   font-weight: 900;
-  text-shadow: 0px 1px 1px #080808;
-  text-transform: uppercase;
-  margin: auto;
-  padding: 24px 8px;;
+  text-align: center;
+  border-bottom: 1px solid #e6e5e5;
+  padding-bottom: 20px;
 }
-.bonus-stripe::before {
-  position: absolute;
-  top: 8px;
-  content: '';
-  display: block;
-  height: 4px;
-  background: #fff;
-  width: 100%;
+.bonus-section .fact-container{
+  display: flex;
+  flex-direction: column;
 }
-.bonus-stripe::after {
-  position: absolute;
-  bottom: 8px;
-  content: '';
-  display: block;
-  height: 4px;
-  background: #fff;
-  width: 100%;
-}
-.bonus {
+.bonus-section .fact-box {
   display: flex;
   flex-direction: row;
-  border: 4px solid #000;
-  margin: 16px 0 0 0;
+  margin: 10px 20px;
+  align-items: center;
+  border-bottom: 1px solid #e8e7e7;
 }
-.bonus p span {
-  text-decoration: underline;
+.last-box {
+  border-bottom: none;
 }
-.bonus-img {
-  width: 45%;
-}
-.bonus-img img {
-
-}
-.bonus-content {
-  padding: 56px;
-}
-.bonus-content h4 {
-  margin: 0;
-  font-size: 22px;
-  line-height: 25px;
-  font-family: 'Montserrat', cursive;
-  font-weight: 700;
-  text-shadow: 0px 1px 1px #080808;
-}
-.bonus-content p {
-  margin: 32px 0;
+.bonus-section  .fact-desc {
+  padding: 24px;
+  color: #000;
   font-size: 20px;
+}
+.bonus-section  .fact-desc h4 {
+  font-size: 22px;
+  font-weight: 800;
 }
 
 /*---------------------- END bonus--------------*/
