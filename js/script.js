@@ -1,5 +1,6 @@
 $( document ).ready(function() {
 
+    $('select').niceSelect();
 
     function resizeViseo() {
         var video = $('video');
