@@ -4,6 +4,9 @@ $( document ).ready(function() {
 
     function resizeViseo() {
         var video = $('video');
+        if ($(window).width() < 500){
+            video.css('max-width', '92%');
+        }
         var videoWidth = video.width();
         var videoHeight = videoWidth*0.60;
         video.css('height',videoHeight);
