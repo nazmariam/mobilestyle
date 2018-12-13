@@ -624,6 +624,7 @@ form .privacy-step1 label {
   font-family: "Open Sans", sans-serif;
   font-size: 24px;
   font-weight: bold;
+  text-align: center;
 }
 .prod-img {
   background-color: #00f0e1;
@@ -669,7 +670,7 @@ form .privacy-step1 label {
   font-family: "Open Sans", sans-serif;
   margin: 24px;
   line-height: 24px;
-  padding: 0 4px;
+  padding: 0 3px;
 }
 .nice-prod strong, .nice-prod-img strong, .video strong {
   font-weight: bold;
@@ -688,6 +689,10 @@ form .privacy-step1 label {
 }
 .video-block {
   margin: 20px auto;
+}
+#top_video {
+  margin: 0 auto;
+  display: block;
 }
 .video h2 {
   font-size: 30px;
@@ -1071,7 +1076,7 @@ form .privacy-step1 label {
   .standard-button span {
     font-size: 14px; }
   .about-goods h1 {
-    font-size: 28px; }
+    font-size: 32px;}
   .about-goods h2 {
     text-align: center;
   }
@@ -1136,7 +1141,16 @@ form .privacy-step1 label {
 }
 
 @media(max-width: 767px){
-
+  .main-text {
+    flex-direction: column;
+  }
+  .prod-name {
+    background: url(../images/or-stripe-2.png) 50% 50% no-repeat;
+    background-size: contain;
+    width: 100%;
+    margin: 11px 20px;
+    padding: 20px 100px;
+  }
   form .security_box {
     padding: 0;
     display: flex;
@@ -1225,11 +1239,59 @@ form .privacy-step1 label {
 }
 
 @media(max-width: 500px) {
-
+  .prod-name {
+    background: url(../images/or-stripe-2.png) 50% 50% no-repeat;
+    background-size: contain;
+    width: 100%;
+    margin: 0px 4px;
+    padding: 0px 4px;
+  }
   .about-goods .container{
-    margin: 15px;
     width: auto;
   }
+  .about-goods h2 {
+    margin: 10px 0 0;
+  }
+  .top-button {
+    margin: 0 44px 6px;
+    padding: 0;
+  }
+  .top-button .standard-button {
+    padding: 10px 43px;
+  }
+  .orange-row {
+    padding: 12px;
+  }
+  .prod-name p {
+    line-height: 26px;
+    margin: 0 6px;
+  }
+  .prod-img {
+    width: 92%;
+    height: auto;
+    margin: 20px auto;
+  }
+  .prod-img h3 {
+    font-size: 29px;
+    margin: 80px 0;
+  }
+  .second-section .container {
+    box-shadow: none;
+  }
+  .nice-prod h2 {
+    max-width: 370px;
+    margin: 0;
+  }
+  .nice-prod img {
+    width:92%;
+  }
+  .button-wrapper {
+    padding: 0;
+  }
+  .nice-prod-img img{
+    width: 92%;
+  }
+
   .main-text{
     padding: 4px;
   }
